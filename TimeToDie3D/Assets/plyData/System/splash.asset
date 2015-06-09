@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1325978074, guid: 6ddf2bb4864414d4d82bfa4d197efc5b, type: 3}
+  m_Name: splash
+  m_EditorClassIdentifier: 
+  screens:
+  - screen:
+      id: -1
+      name: Splash Screen 1
+      skin: {fileID: 0}
+      doClearBack: 1
+      backgroundColor: {r: .204044104, g: .238051474, b: .272058845, a: 1}
+      designWidth: 1024
+      designHeight: 768
+      labelEles: []
+      imageEles:
+      - id: 0
+        name: Image-0
+        type: 2
+        zdepth: 0
+        anchor: 4
+        scaling: 1
+        offsetX: 0
+        offsetY: 0
+        width: 100
+        height: 100
+        visible: 1
+        enabled: 1
+        styleName: 
+        soundClip: {fileID: 0}
+        eventName: 
+        eventParam1: 
+        eventParam2: 
+        eventParam3: 
+        langEdTouched: 0
+        texture: {fileID: 2800000, guid: 7d414c10a26ab7648a6ebc6c55b75f38, type: 3}
+      movieEles: []
+      buttonEles: []
+      editEles: []
+      toggleEles: []
+      boxEles: []
+      nextUIEleId: 1
+    autoChangeTime: 2
+    allowSkipping: 1
+    autoAfterMovie: -1

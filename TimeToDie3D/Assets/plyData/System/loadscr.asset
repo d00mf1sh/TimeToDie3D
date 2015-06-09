@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -888096663, guid: 6ddf2bb4864414d4d82bfa4d197efc5b, type: 3}
+  m_Name: loadscr
+  m_EditorClassIdentifier: 
+  screens:
+  - id: 0
+    name: Load Screen 1
+    skin: {fileID: 0}
+    doClearBack: 1
+    backgroundColor: {r: .204044104, g: .238051474, b: .272058845, a: 1}
+    designWidth: 1024
+    designHeight: 768
+    labelEles: []
+    imageEles: []
+    movieEles: []
+    buttonEles: []
+    editEles: []
+    toggleEles: []
+    boxEles: []
+    nextUIEleId: 0
+  nextScreenId: 1
+  minLoadTime: 1
+  clickToContinue: 0
+  loadText: now loading ...

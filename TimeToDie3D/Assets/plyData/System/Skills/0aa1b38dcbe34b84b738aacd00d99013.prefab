@@ -1,0 +1,469 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &138148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 497638}
+  - 114: {fileID: 11498040}
+  - 114: {fileID: 11464490}
+  - 82: {fileID: 8256392}
+  m_Layer: 0
+  m_Name: 0aa1b38dcbe34b84b738aacd00d99013
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &497638
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!82 &8256392
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138148}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: feefb98b577e06048b45aeee5e73fe6b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11464490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1992572321, guid: 357936f588f68fb4e8f1d038fdfe02c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showDebugInfo: 1
+  def:
+    ident: PlyrATK
+    screenName: Basic Attack
+    shortName: 
+    meta: 
+    description: 
+    images:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  id:
+    savedIdent: 0aa1b38dcbe34b84b738aacd00d99013
+  blox: {fileID: 11498040}
+  executionTimeout: .300000012
+  cooldownTimeout: .100000001
+  mayPerformWhileMove: 0
+  forceStop: 1
+  canBeQueued: 1
+  autoQueue: 0
+  activation: 0
+  deliveryMethod: 0
+  targetingMethodMask: 4
+  validTargetsMask: 8
+  targetLocation: 0
+  maxEffects: 1
+  targetingDistance: 2
+  targetingAngle: 90
+  targetingRadius: 5
+  obstacleCheckMask:
+    serializedVersion: 2
+    m_Bits: 768
+  obstacbleCheckHeight: 1.5
+  instantHitDelay: 0
+  secondaryMaxTargets: 0
+  secondaryRadius: 5
+  secondaryObstacleCheckMask:
+    serializedVersion: 2
+    m_Bits: 0
+  secondaryObstacbleCheckHeight: 1.5
+  projectileFabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  projectileCreateDelay: 0
+  projectileCreateDelayBetween: 0
+  projectileMoveMethod: 0
+  moveMethod_b_opt: 0
+  useVectorOffset: 1
+  projectileCreateOffset: {x: 0, y: 1, z: .5}
+  projectileCreateAtTagged: 
+  hitHeightPercentage: 50
+  maxFlightDistance: 10
+  maxLiveTime: 0
+  projectileMoveSpeed: 10
+  triggerSecondaryOnFizzle: 0
+  triggerSecondaryOnFizzleOnlyIfObstacle: 1
+  collisionRayWidth: 0
+  destroyProjectileOnHit: 1
+--- !u!114 &11498040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 677389920, guid: ee437a4da0b2668478cfbed61746a8ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plyBloxGlobalPrefab: {fileID: 172974, guid: 0cc4d911cad2e0d4db9fb293c5869e18, type: 2}
+  states:
+  - name: State 0
+    data:
+      eventTypes:
+      - plyGame.SkillActivateEvent
+      - plyGame.SkillHitEvent
+      eventNames:
+      - On Skill Activate
+      - On Skill Hit
+      eventIdents:
+      - On Skill Activate
+      - On Skill Hit
+      eventFirstBlock: 0000000005000000
+      blockTypes:
+      - plyBloxKit.Mecanim_SetTriggerParam_plyBlock
+      - plyBloxKit.String_Value
+      - plyBloxKit.GetLocalVar_asGameObject_plyBlock
+      - plyBloxKit.AudioSource_PlayOneShot_plyBlock
+      - plyBloxKit.UnityObject_Value
+      - plyGame.ActorAttribute_Change_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.InstantiateObject_plyBlock
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.GetTempVar_asVector3_plyBlock
+      - plyBloxKit.GetLocalVar_asFloat_plyBlock
+      - plyBloxKit.AudioSource_PlayOneShot_plyBlock
+      - plyBloxKit.UnityObject_Value
+      blockLinks:
+      - nextIdx: 3
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 0
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 0
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: 0
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 3
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: 8
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 5
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 5
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: 12
+        prevIdx: 5
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 5
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: 8
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 12
+        childIdx: -1
+        eventIdx: 1
+      blockDataIdx: 000000000400000005000000080000000c0000000d0000001400000016000000180000001c0000001d0000001f0000002200000026000000
+      blockDataCnt: 0400000001000000030000000400000001000000070000000200000002000000040000000100000002000000030000000400000001000000
+      blockData:
+      - type: 3
+        name: paramName
+        data: 01000000
+      - type: 3
+        name: target
+        data: 02000000
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 5
+        name: cacheParam
+        data: 00
+      - type: 9
+        name: value
+        data: 4f6e41747461636b31
+      - type: 9
+        name: varName
+        data: 46656d5f62617365
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 3
+        name: clip
+        data: 04000000
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 3
+        name: scale
+        data: ffffffff
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 11
+        name: value
+        data: 00000000
+      - type: 4
+        name: valueType
+        data: 01000000
+      - type: 9
+        name: attribName
+        data: 4865616c7468
+      - type: 4
+        name: identType
+        data: 01000000
+      - type: 3
+        name: target
+        data: 07000000
+      - type: 3
+        name: val
+        data: 0b000000
+      - type: 3
+        name: influence
+        data: 06000000
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 9
+        name: varName
+        data: 736b696c6c4f776e6572
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 3
+        name: prefab
+        data: 09000000
+      - type: 3
+        name: pos
+        data: 0a000000
+      - type: 3
+        name: rot
+        data: ffffffff
+      - type: 3
+        name: saveIn
+        data: ffffffff
+      - type: 10
+        name: value
+        data: 00000000
+      - type: 9
+        name: varName
+        data: 686974506f696e74
+      - type: 14
+        name: value
+        data: 000000000000000000000000
+      - type: 9
+        name: varName
+        data: 506c7972446d67
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 8
+        name: value
+        data: 00000000
+      - type: 3
+        name: clip
+        data: 0d000000
+      - type: 3
+        name: target
+        data: ffffffff
+      - type: 3
+        name: scale
+        data: ffffffff
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 11
+        name: value
+        data: 01000000
+      gameObjects:
+      - {fileID: 113746, guid: b88df1777401ec94d98c0019e41199e6, type: 2}
+      unityObjects:
+      - {fileID: 8300000, guid: feefb98b577e06048b45aeee5e73fe6b, type: 3}
+      - {fileID: 8300000, guid: b3df3262578a79641b07bc01783f5308, type: 3}
+      arrayData: []
+      arrayDataNfo: []
+      customData: []
+      customDataNfo: []
+      eventActive: 0101
+      blockActive: 0101010101010101010101010101
+  vars:
+  - name: PlyrDmg
+    type: 2
+    boolValue: 0
+    intValue: 0
+    floatValue: -20
+    stringValue: 
+    rectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    vect2Value: {x: 0, y: 0}
+    vect3Value: {x: 0, y: 0, z: 0}
+    goValue: {fileID: 0}
+    uObjValue: {fileID: 0}
+    persist: 1
+  - name: Fem_base
+    type: 8
+    boolValue: 0
+    intValue: 0
+    floatValue: 0
+    stringValue: 
+    rectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    vect2Value: {x: 0, y: 0}
+    vect3Value: {x: 0, y: 0, z: 0}
+    goValue: {fileID: 0}
+    uObjValue: {fileID: 0}
+    persist: 1
+  uniqueIdOnObject: -1
+  NeedObjectActive: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 138148}
+  m_IsPrefabParent: 1

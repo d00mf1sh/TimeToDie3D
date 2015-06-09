@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &185638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 467240}
+  - 114: {fileID: 11411062}
+  - 114: {fileID: 11478470}
+  m_Layer: 0
+  m_Name: 1d4814ea29164f1cb15e46fd77c503fd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &467240
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11411062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 677389920, guid: ee437a4da0b2668478cfbed61746a8ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plyBloxGlobalPrefab: {fileID: 0}
+  states: []
+  vars: []
+  uniqueIdOnObject: -1
+  NeedObjectActive: 0
+--- !u!114 &11478470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2062146570, guid: 357936f588f68fb4e8f1d038fdfe02c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id:
+    savedIdent: 1d4814ea29164f1cb15e46fd77c503fd
+  def:
+    ident: 
+    screenName: PlayerDefault
+    shortName: 
+    meta: 
+    description: 
+    images:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  maxLevel: 99
+  maxXP: 100000
+  xpCurve:
+    yMin: 0
+    yMax: 100000
+    values: 00000000fc030000f8070000f50b0000f10f0000ee130000ea170000e61b0000e31f0000df230000dc270000d82b0000d42f0000d1330000cd370000ca3b0000c63f0000c2430000bf470000bb4b0000b84f0000b4530000b0570000ad5b0000a95f0000a6630000a26700009f6b00009b6f00009773000094770000907b00008d7f00008983000085870000828b00007e8f00007b93000077970000739b0000709f00006ca3000069a7000065ab000061af00005eb300005ab7000057bb000053bf000050c300004cc7000048cb000045cf000041d300003ed700003adb000036df000033e300002fe700002ceb000028ef000024f3000021f700001dfb00001aff000016030100120701000f0b01000b0f01000813010004170100001b0100fd1e0100f9220100f6260100f22a0100ef2e0100eb320100e7360100e43a0100e03e0100dd420100d9460100d54a0100d24e0100ce520100cb560100c75a0100c35e0100c0620100bc660100b96a0100b56e0100b1720100ae760100aa7a0100a77e0100a3820100a0860100
+    easingType: 1
+    acceleration: 1
+  attributesInitData:
+  - id:
+      savedIdent: d1226c010ff84d778cee3704082990b0
+    baseValue: 100
+    maxValue: 9999
+    canGrow: 1
+    growthCurve:
+      yMin: 100
+      yMax: 9999
+      values: 64000000c90000002e01000093010000f80100005d020000c2020000270300008c030000f103000056040000bb0400002005000085050000ea0500004f060000b4060000190700007e070000e307000048080000ad0800001209000077090000dc090000410a0000a60a00000b0b0000700b0000d50b00003a0c00009f0c0000040d0000690d0000ce0d0000330e0000980e0000fd0e0000620f0000c70f00002c10000091100000f61000005b110000c0110000251200008a120000ef12000054130000b91300001e14000083140000e81400004d150000b2150000171600007c160000e116000046170000ab1700001018000075180000da1800003f190000a4190000091a00006e1a0000d31a0000381b00009d1b0000021c0000671c0000cc1c0000311d0000961d0000fb1d0000601e0000c51e00002a1f00008f1f0000f41f000059200000be2000002321000088210000ed21000052220000b72200001c23000081230000e62300004b240000b0240000152500007a250000df25000044260000a92600000f270000
+      easingType: 1
+      acceleration: 1
+    alsoUpdateConsumable: 1
+  - id:
+      savedIdent: 006b0dae48d64822a4ce1ccd8ee55d0d
+    baseValue: 5
+    maxValue: 999
+    canGrow: 0
+    growthCurve:
+      yMin: 0
+      yMax: 0
+      values: 
+      easingType: 1
+      acceleration: 1
+    alsoUpdateConsumable: 1
+  blox: {fileID: 11411062}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 185638}
+  m_IsPrefabParent: 1

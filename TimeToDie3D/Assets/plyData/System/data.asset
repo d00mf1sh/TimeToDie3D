@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 998814696, guid: 6ddf2bb4864414d4d82bfa4d197efc5b, type: 3}
+  m_Name: data
+  m_EditorClassIdentifier: 
+  loadSaveProviderFab: {fileID: 174664, guid: e0219ab91de81ae4a9a5b87080f4733c, type: 2}
+  assets:
+  - {fileID: 11400000, guid: 582d29ad69759e340bd2e14c6945ad10, type: 2}
+  - {fileID: 11400000, guid: bd2f596c9b1fb534fa6d671dc0298abd, type: 2}
+  - {fileID: 11400000, guid: 228e56c7ed1161b43bb94bfe3df8088a, type: 2}
+  - {fileID: 11400000, guid: 1a5a89b1e05c73242ab7f839d41fe523, type: 2}
+  - {fileID: 11400000, guid: aa9c13e31cf39574c9af52a7178d7ecb, type: 2}
+  autoCreate:
+  - {fileID: 120682, guid: 30b71e79a32cffe4d91b3971a1337223, type: 2}
+  - {fileID: 193062, guid: 7f551b61942873e46837765748b6e805, type: 2}
+  autoComponents: []
+  autoFabs: []
+  volume:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  guiVolumeType: 2
+  createDefaultAudioListener: 1

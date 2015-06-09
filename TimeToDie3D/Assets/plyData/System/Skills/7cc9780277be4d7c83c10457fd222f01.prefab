@@ -1,0 +1,443 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &115918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 492142}
+  - 114: {fileID: 11420604}
+  - 114: {fileID: 11440672}
+  - 82: {fileID: 8287136}
+  m_Layer: 0
+  m_Name: 7cc9780277be4d7c83c10457fd222f01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &492142
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!82 &8287136
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115918}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b3df3262578a79641b07bc01783f5308, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .771000028
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11420604
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 677389920, guid: ee437a4da0b2668478cfbed61746a8ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plyBloxGlobalPrefab: {fileID: 172974, guid: 0cc4d911cad2e0d4db9fb293c5869e18, type: 2}
+  states:
+  - name: State 0
+    data:
+      eventTypes:
+      - plyGame.SkillActivateEvent
+      - plyGame.SkillHitEvent
+      eventNames:
+      - On Skill Activate
+      - On Skill Hit
+      eventIdents:
+      - On Skill Activate
+      - On Skill Hit
+      eventFirstBlock: 0100000008000000
+      blockTypes:
+      - plyBloxKit.Debug_plyBlock
+      - plyGame.Chara_PlayAnim_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.AudioSource_PlayOneShot_plyBlock
+      - plyBloxKit.UnityObject_Value
+      - plyBloxKit.Component_Value
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyGame.ActorAttribute_Change_plyBlock
+      - plyBloxKit.InstantiateObject_plyBlock
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.GetTempVar_asVector3_plyBlock
+      - plyBloxKit.GetGlobalVar_asFloat_plyBlock
+      blockLinks:
+      - nextIdx: -1
+        prevIdx: 3
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: 3
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: 0
+        prevIdx: 1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 3
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 3
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: 9
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: 8
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 9
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 9
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      blockDataIdx: 00000000020000000e00000010000000140000001500000016000000180000001a00000021000000250000002600000028000000
+      blockDataCnt: 020000000c0000000200000004000000010000000100000002000000020000000700000004000000010000000200000002000000
+      blockData:
+      - type: 9
+        name: label
+        data: 54657374696e67204e50432041747461636b
+      - type: 3
+        name: val
+        data: ffffffff
+      - type: 3
+        name: aniNameStr
+        data: ffffffff
+      - type: 1
+        name: aniName
+        data: 00000000
+      - type: 3
+        name: targetChara
+        data: 02000000
+      - type: 5
+        name: reverse
+        data: 00
+      - type: 8
+        name: speed
+        data: 0000803f
+      - type: 4
+        name: wrapMode
+        data: 00000000
+      - type: 4
+        name: playMode
+        data: 00000000
+      - type: 5
+        name: crossfade
+        data: 00
+      - type: 8
+        name: fadeLength
+        data: 9a99993e
+      - type: 5
+        name: queued
+        data: 00
+      - type: 4
+        name: queueMode
+        data: 00000000
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 9
+        name: varName
+        data: 736b696c6c4f776e6572
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 3
+        name: clip
+        data: 04000000
+      - type: 3
+        name: target
+        data: 05000000
+      - type: 3
+        name: scale
+        data: ffffffff
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 11
+        name: value
+        data: 00000000
+      - type: 11
+        name: value
+        data: 01000000
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 9
+        name: varName
+        data: 736b696c6c4f776e6572
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 4
+        name: valueType
+        data: 01000000
+      - type: 9
+        name: attribName
+        data: 4850
+      - type: 4
+        name: identType
+        data: 00000000
+      - type: 3
+        name: target
+        data: 06000000
+      - type: 3
+        name: val
+        data: 0c000000
+      - type: 3
+        name: influence
+        data: 07000000
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 3
+        name: prefab
+        data: 0a000000
+      - type: 3
+        name: pos
+        data: 0b000000
+      - type: 3
+        name: rot
+        data: ffffffff
+      - type: 3
+        name: saveIn
+        data: ffffffff
+      - type: 10
+        name: value
+        data: 00000000
+      - type: 9
+        name: varName
+        data: 686974506f696e74
+      - type: 14
+        name: value
+        data: 000000000000000000000000
+      - type: 9
+        name: varName
+        data: 4e5043646d67
+      - type: 8
+        name: value
+        data: 00000000
+      gameObjects:
+      - {fileID: 113746, guid: b88df1777401ec94d98c0019e41199e6, type: 2}
+      unityObjects:
+      - {fileID: 8300000, guid: 9014fc89cd0cb6242907ff65caf32945, type: 3}
+      - {fileID: 0}
+      arrayData: []
+      arrayDataNfo: []
+      customData:
+      - type: 9
+        name: name
+        data: 50415f57617272696f7241747461636b5f436c6970
+      customDataNfo:
+      - typeName: plyGame.CharaAniClipNameData, plyRPG, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        idx: 0
+        size: 1
+      eventActive: 0101
+      blockActive: 01010101010101010101010101
+  vars: []
+  uniqueIdOnObject: -1
+  NeedObjectActive: 0
+--- !u!114 &11440672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1992572321, guid: 357936f588f68fb4e8f1d038fdfe02c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showDebugInfo: 0
+  def:
+    ident: NPCBscAtk
+    screenName: NPC Basic Attack
+    shortName: 
+    meta: 
+    description: 
+    images:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  id:
+    savedIdent: 7cc9780277be4d7c83c10457fd222f01
+  blox: {fileID: 11420604}
+  executionTimeout: .200000003
+  cooldownTimeout: .129999995
+  mayPerformWhileMove: 0
+  forceStop: 1
+  canBeQueued: 1
+  autoQueue: 0
+  activation: 0
+  deliveryMethod: 0
+  targetingMethodMask: 2
+  validTargetsMask: 8
+  targetLocation: 0
+  maxEffects: 1
+  targetingDistance: 1
+  targetingAngle: 40
+  targetingRadius: 5
+  obstacleCheckMask:
+    serializedVersion: 2
+    m_Bits: 768
+  obstacbleCheckHeight: 1.5
+  instantHitDelay: 0
+  secondaryMaxTargets: 0
+  secondaryRadius: 5
+  secondaryObstacleCheckMask:
+    serializedVersion: 2
+    m_Bits: 0
+  secondaryObstacbleCheckHeight: 1.5
+  projectileFabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  projectileCreateDelay: 0
+  projectileCreateDelayBetween: 0
+  projectileMoveMethod: 0
+  moveMethod_b_opt: 0
+  useVectorOffset: 1
+  projectileCreateOffset: {x: 0, y: 1, z: .5}
+  projectileCreateAtTagged: 
+  hitHeightPercentage: 50
+  maxFlightDistance: 10
+  maxLiveTime: 0
+  projectileMoveSpeed: 10
+  triggerSecondaryOnFizzle: 0
+  triggerSecondaryOnFizzleOnlyIfObstacle: 1
+  collisionRayWidth: 0
+  destroyProjectileOnHit: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 115918}
+  m_IsPrefabParent: 1

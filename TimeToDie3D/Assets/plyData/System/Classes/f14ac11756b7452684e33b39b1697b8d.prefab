@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &193194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 465854}
+  - 114: {fileID: 11458826}
+  - 114: {fileID: 11428036}
+  m_Layer: 0
+  m_Name: f14ac11756b7452684e33b39b1697b8d
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &465854
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11428036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2062146570, guid: 357936f588f68fb4e8f1d038fdfe02c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id:
+    savedIdent: f14ac11756b7452684e33b39b1697b8d
+  def:
+    ident: 
+    screenName: NPC1
+    shortName: 
+    meta: 
+    description: 
+    images:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    sprites:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  maxLevel: 50
+  maxXP: 100000
+  xpCurve:
+    yMin: 0
+    yMax: 100000
+    values: 00000000f8070000f10f0000ea170000e31f0000dc270000d42f0000cd370000c63f0000bf470000b84f0000b0570000a95f0000a26700009b6f0000947700008d7f0000858700007e8f000077970000709f000069a7000061af00005ab7000053bf00004cc7000045cf00003ed7000036df00002fe7000028ef000021f700001aff0000120701000b0f010004170100fd1e0100f6260100ef2e0100e7360100e03e0100d9460100d24e0100cb560100c35e0100bc660100b56e0100ae760100a77e0100a0860100
+    easingType: 1
+    acceleration: 1
+  attributesInitData:
+  - id:
+      savedIdent: d1226c010ff84d778cee3704082990b0
+    baseValue: 30
+    maxValue: 999
+    canGrow: 1
+    growthCurve:
+      yMin: 30
+      yMax: 999
+      values: 1e00000021000000260000002c0000003200000039000000420000004a000000540000005e0000006a0000007600000082000000900000009e000000ad000000bd000000cd000000de000000f00000000201000016010000290100003e01000053010000680100007e01000095010000ac010000c4010000dc010000f50100000e02000028020000420200005c0200007702000092020000ad020000c9020000e4020000000300001d03000039030000560300007303000090030000ac030000c9030000e7030000
+      easingType: 2
+      acceleration: .819999993
+    alsoUpdateConsumable: 1
+  - id:
+      savedIdent: 006b0dae48d64822a4ce1ccd8ee55d0d
+    baseValue: 5
+    maxValue: 999
+    canGrow: 0
+    growthCurve:
+      yMin: 0
+      yMax: 0
+      values: 
+      easingType: 1
+      acceleration: 1
+    alsoUpdateConsumable: 1
+  blox: {fileID: 11458826}
+--- !u!114 &11458826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 677389920, guid: ee437a4da0b2668478cfbed61746a8ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plyBloxGlobalPrefab: {fileID: 172974, guid: 0cc4d911cad2e0d4db9fb293c5869e18, type: 2}
+  states: []
+  vars: []
+  uniqueIdOnObject: -1
+  NeedObjectActive: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 193194}
+  m_IsPrefabParent: 1

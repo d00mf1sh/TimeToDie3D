@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1444503799, guid: 357936f588f68fb4e8f1d038fdfe02c7, type: 3}
+  m_Name: attributes
+  m_EditorClassIdentifier: 
+  attributes:
+  - id:
+      savedIdent: d1226c010ff84d778cee3704082990b0
+    def:
+      ident: HP
+      screenName: Health
+      shortName: 
+      meta: 
+      description: 
+      images:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      sprites:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+  - id:
+      savedIdent: 006b0dae48d64822a4ce1ccd8ee55d0d
+    def:
+      ident: XP
+      screenName: Experience
+      shortName: 
+      meta: 
+      description: 
+      images:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      sprites:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+  hpAttribId:
+    savedIdent: d1226c010ff84d778cee3704082990b0
+  xpAttribId:
+    savedIdent: 006b0dae48d64822a4ce1ccd8ee55d0d

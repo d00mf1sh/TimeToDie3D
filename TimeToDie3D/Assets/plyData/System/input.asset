@@ -273,12 +273,24 @@ MonoBehaviour:
     active: 1
     category: Action
     name: Action12
-    screenName1: Action 12
+    screenName1: Pause Button
     screenName2: 
     binds:
     - device: 0
       keyMod: 0
-      key1: 61
+      key1: 27
+      key2: 0
+      mouseAxis: -1
+      keyMouseInvert: 0
+      mouseAxisSide: 0
+      gamepadAxisMod: -1
+      gamepadAxis: -1
+      gamepadInvert: 0
+      gamepadAxisModSide: 0
+      gamepadAxisSide: 0
+    - device: 1
+      keyMod: 0
+      key1: 337
       key2: 0
       mouseAxis: -1
       keyMouseInvert: 0

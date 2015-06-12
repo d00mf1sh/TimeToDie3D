@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 497638}
   - 114: {fileID: 11498040}
   - 114: {fileID: 11464490}
-  - 82: {fileID: 8256392}
   m_Layer: 0
   m_Name: 0aa1b38dcbe34b84b738aacd00d99013
   m_TagString: Untagged
@@ -30,75 +29,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!82 &8256392
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138148}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: feefb98b577e06048b45aeee5e73fe6b, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!114 &11464490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -199,13 +129,16 @@ MonoBehaviour:
       eventIdents:
       - On Skill Activate
       - On Skill Hit
-      eventFirstBlock: 0000000005000000
+      eventFirstBlock: 0000000008000000
       blockTypes:
       - plyBloxKit.Mecanim_SetTriggerParam_plyBlock
       - plyBloxKit.String_Value
-      - plyBloxKit.GetLocalVar_asGameObject_plyBlock
       - plyBloxKit.AudioSource_PlayOneShot_plyBlock
       - plyBloxKit.UnityObject_Value
+      - plyBloxKit.GetComponent_plyBlock
+      - plyBloxKit.FindObjectByTag_plyBlock
+      - plyBloxKit.Int_Value
+      - plyBloxKit.FindObjectByTag_plyBlock
       - plyGame.ActorAttribute_Change_plyBlock
       - plyBloxKit.GetTempVar_asGameObject_plyBlock
       - plyBloxKit.GetTempVar_asGameObject_plyBlock
@@ -215,15 +148,13 @@ MonoBehaviour:
       - plyBloxKit.GetLocalVar_asFloat_plyBlock
       - plyBloxKit.AudioSource_PlayOneShot_plyBlock
       - plyBloxKit.UnityObject_Value
+      - plyBloxKit.GetComponent_plyBlock
+      - plyBloxKit.GetTempVar_asGameObject_plyBlock
+      - plyBloxKit.Int_Value
       blockLinks:
-      - nextIdx: 3
+      - nextIdx: 2
         prevIdx: -1
         ownerIdx: -1
-        childIdx: -1
-        eventIdx: 0
-      - nextIdx: -1
-        prevIdx: -1
-        ownerIdx: 0
         childIdx: -1
         eventIdx: 0
       - nextIdx: -1
@@ -238,26 +169,31 @@ MonoBehaviour:
         eventIdx: 0
       - nextIdx: -1
         prevIdx: -1
-        ownerIdx: 3
+        ownerIdx: 2
         childIdx: -1
         eventIdx: 0
-      - nextIdx: 8
-        prevIdx: -1
-        ownerIdx: -1
-        childIdx: -1
-        eventIdx: 1
       - nextIdx: -1
         prevIdx: -1
-        ownerIdx: 5
+        ownerIdx: 2
         childIdx: -1
-        eventIdx: 1
+        eventIdx: 0
       - nextIdx: -1
         prevIdx: -1
-        ownerIdx: 5
+        ownerIdx: 4
         childIdx: -1
-        eventIdx: 1
-      - nextIdx: 12
-        prevIdx: 5
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 4
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 0
+        childIdx: -1
+        eventIdx: 0
+      - nextIdx: 11
+        prevIdx: -1
         ownerIdx: -1
         childIdx: -1
         eventIdx: 1
@@ -271,30 +207,60 @@ MonoBehaviour:
         ownerIdx: 8
         childIdx: -1
         eventIdx: 1
-      - nextIdx: -1
-        prevIdx: -1
-        ownerIdx: 5
-        childIdx: -1
-        eventIdx: 1
-      - nextIdx: -1
+      - nextIdx: 15
         prevIdx: 8
         ownerIdx: -1
         childIdx: -1
         eventIdx: 1
       - nextIdx: -1
         prevIdx: -1
-        ownerIdx: 12
+        ownerIdx: 11
         childIdx: -1
         eventIdx: 1
-      blockDataIdx: 000000000400000005000000080000000c0000000d0000001400000016000000180000001c0000001d0000001f0000002200000026000000
-      blockDataCnt: 0400000001000000030000000400000001000000070000000200000002000000040000000100000002000000030000000400000001000000
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 11
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 8
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: 11
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 15
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 15
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 17
+        childIdx: -1
+        eventIdx: 1
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 17
+        childIdx: -1
+        eventIdx: 1
+      blockDataIdx: 000000000400000005000000090000000a000000100000001200000013000000150000001c0000001e000000200000002400000025000000270000002a0000002e0000002f0000003500000037000000
+      blockDataCnt: 0400000001000000040000000100000006000000020000000100000002000000070000000200000002000000040000000100000002000000030000000400000001000000060000000200000001000000
       blockData:
       - type: 3
         name: paramName
         data: 01000000
       - type: 3
         name: target
-        data: 02000000
+        data: 07000000
       - type: 5
         name: cacheTarget
         data: 00
@@ -304,21 +270,12 @@ MonoBehaviour:
       - type: 9
         name: value
         data: 4f6e41747461636b31
-      - type: 9
-        name: varName
-        data: 46656d5f62617365
-      - type: 3
-        name: target
-        data: ffffffff
-      - type: 10
-        name: value
-        data: ffffffff
       - type: 3
         name: clip
-        data: 04000000
+        data: 03000000
       - type: 3
         name: target
-        data: ffffffff
+        data: 04000000
       - type: 3
         name: scale
         data: ffffffff
@@ -328,6 +285,39 @@ MonoBehaviour:
       - type: 11
         name: value
         data: 00000000
+      - type: 9
+        name: componentName
+        data: 417564696f536f75726365
+      - type: 3
+        name: target
+        data: 05000000
+      - type: 5
+        name: orChildren
+        data: 01
+      - type: 3
+        name: idx
+        data: 06000000
+      - type: 5
+        name: silent
+        data: 00
+      - type: 11
+        name: value
+        data: ffffffff
+      - type: 9
+        name: tagName
+        data: 417564696f4d616e61676572
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 7
+        name: value
+        data: 02000000
+      - type: 9
+        name: tagName
+        data: 506c61796572
+      - type: 10
+        name: value
+        data: ffffffff
       - type: 4
         name: valueType
         data: 01000000
@@ -339,13 +329,13 @@ MonoBehaviour:
         data: 01000000
       - type: 3
         name: target
-        data: 07000000
+        data: 0a000000
       - type: 3
         name: val
-        data: 0b000000
+        data: 0e000000
       - type: 3
         name: influence
-        data: 06000000
+        data: 09000000
       - type: 5
         name: cacheTarget
         data: 00
@@ -363,10 +353,10 @@ MonoBehaviour:
         data: ffffffff
       - type: 3
         name: prefab
-        data: 09000000
+        data: 0c000000
       - type: 3
         name: pos
-        data: 0a000000
+        data: 0d000000
       - type: 3
         name: rot
         data: ffffffff
@@ -393,10 +383,10 @@ MonoBehaviour:
         data: 00000000
       - type: 3
         name: clip
-        data: 0d000000
+        data: 10000000
       - type: 3
         name: target
-        data: ffffffff
+        data: 11000000
       - type: 3
         name: scale
         data: ffffffff
@@ -404,6 +394,33 @@ MonoBehaviour:
         name: cacheTarget
         data: 00
       - type: 11
+        name: value
+        data: 01000000
+      - type: 9
+        name: componentName
+        data: 417564696f536f75726365
+      - type: 3
+        name: target
+        data: 12000000
+      - type: 5
+        name: orChildren
+        data: 01
+      - type: 3
+        name: idx
+        data: 13000000
+      - type: 5
+        name: silent
+        data: 00
+      - type: 11
+        name: value
+        data: ffffffff
+      - type: 9
+        name: varName
+        data: 6869744f626a656374
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 7
         name: value
         data: 01000000
       gameObjects:
@@ -416,7 +433,7 @@ MonoBehaviour:
       customData: []
       customDataNfo: []
       eventActive: 0101
-      blockActive: 0101010101010101010101010101
+      blockActive: 0101010101010101010101010101010101010101
   vars:
   - name: PlyrDmg
     type: 2

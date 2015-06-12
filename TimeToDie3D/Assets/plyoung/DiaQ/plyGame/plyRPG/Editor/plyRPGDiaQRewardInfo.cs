@@ -8,10 +8,9 @@ using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
 using plyCommon;
-using plyGame;
-using DiaQ;
 using plyCommonEditor;
 using plyCommonEditor.FontAwesome;
+using plyGame;
 using plyGameEditor;
 
 namespace DiaQEditor
@@ -102,12 +101,7 @@ namespace DiaQEditor
 		public override void NfoFieldFocus(plyDataObject data, EditorWindow ed)
 		{
 			// make sure the Component that handles the Rewards is registered to be added to DiaQ
-			#if UNITY_4_6
 			EdGlobal.RegisterAutoComponent("DiaQ", "plyRPGDiaQRewardHandler");
-			#else
-			EdGlobal.RemoveAutoComponent("DiaQ", "plyRPGDiaQRewardHandler"); // make sure old one is not present as it causes problems
-			EdGlobal.RegisterAutoComponent("DiaQ", typeof(plyRPGDiaQRewardHandler).AssemblyQualifiedName);
-			#endif
 
 			selected = 0;
 			int.TryParse(data.nfo[0], out selected);

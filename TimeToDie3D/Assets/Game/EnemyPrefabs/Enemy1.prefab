@@ -887,8 +887,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.239999995, y: 0, z: 14.8999996}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -2.30999994, y: 0, z: 20.3899994}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 445738}
   m_Father: {fileID: 0}
@@ -1025,9 +1025,9 @@ MonoBehaviour:
   runSpeed: 6
   thinkInterval: 1
   idleMode: 1
-  wanderArea: 0
-  wanderRadius: 17.0599995
-  wanderWH: {x: 1, y: 1}
+  wanderArea: 1
+  wanderRadius: 0
+  wanderWH: {x: 14.1000004, y: 15.6999998}
   wanderDelayMin: .5
   wanderDelayMax: 2
   path: {fileID: 0}
@@ -1209,13 +1209,16 @@ MonoBehaviour:
       eventTypes:
       - plyGame.OnActorDeathEvent
       - plyGame.NPCAIThinkEvent
+      - plyBloxKit.UpdateEvent
       eventNames:
       - On Actor Death
       - On AI Think
+      - On Update
       eventIdents:
       - On Actor Death
       - On AI Think
-      eventFirstBlock: 000000000b000000
+      - On Update
+      eventFirstBlock: 000000000b00000010000000
       blockTypes:
       - plyBloxKit.IfCondition_plyBlock
       - plyBloxKit.SetGlobalVar_plyBlock
@@ -1229,9 +1232,16 @@ MonoBehaviour:
       - plyGame.Skill_Use_plyBlock
       - plyGame.Skill_plyBlock
       - plyBloxKit.IfCondition_plyBlock
-      - plyBloxKit.Debug_plyBlock
       - plyBloxKit.GetSelfGameObject_Block
       - plyBloxKit.GetSelfGameObject_Block
+      - plyGame.ActorAttribute_Get_plyBlock
+      - plyBloxKit.GetSelfGameObject_Block
+      - plyBloxKit.SendMessage_plyBlock
+      - plyGame.ActorAttribute_Get_plyBlock
+      - plyBloxKit.GetSelfGameObject_Block
+      - plyBloxKit.SendMessage_plyBlock
+      - plyBloxKit.GameObject_Value
+      - plyBloxKit.GameObject_Value
       blockLinks:
       - nextIdx: -1
         prevIdx: -1
@@ -1278,7 +1288,7 @@ MonoBehaviour:
         ownerIdx: 11
         childIdx: -1
         eventIdx: 1
-      - nextIdx: 12
+      - nextIdx: -1
         prevIdx: -1
         ownerIdx: 11
         childIdx: -1
@@ -1294,11 +1304,6 @@ MonoBehaviour:
         childIdx: 9
         eventIdx: 1
       - nextIdx: -1
-        prevIdx: 9
-        ownerIdx: 11
-        childIdx: -1
-        eventIdx: 1
-      - nextIdx: -1
         prevIdx: -1
         ownerIdx: 8
         childIdx: -1
@@ -1308,8 +1313,48 @@ MonoBehaviour:
         ownerIdx: 9
         childIdx: -1
         eventIdx: 1
-      blockDataIdx: 00000000010000000400000007000000090000000c0000000e0000000f0000001100000014000000180000001c0000001d0000001f00000020000000
-      blockDataCnt: 010000000300000003000000020000000300000002000000010000000200000003000000040000000400000001000000020000000100000001000000
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 16
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 14
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: 19
+        prevIdx: -1
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 19
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 17
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: -1
+        prevIdx: 16
+        ownerIdx: -1
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 19
+        childIdx: -1
+        eventIdx: 2
+      - nextIdx: -1
+        prevIdx: -1
+        ownerIdx: 16
+        childIdx: -1
+        eventIdx: 2
+      blockDataIdx: 00000000010000000400000007000000090000000c0000000e0000000f0000001100000014000000180000001c0000001d0000001e0000001f0000002500000026000000290000002f000000300000003300000034000000
+      blockDataCnt: 01000000030000000300000002000000030000000200000001000000020000000300000004000000040000000100000001000000010000000600000001000000030000000600000001000000030000000100000001000000
       blockData:
       - type: 3
         name: val
@@ -1364,7 +1409,7 @@ MonoBehaviour:
         data: 00000000
       - type: 3
         name: target
-        data: 0d000000
+        data: 0c000000
       - type: 5
         name: cacheTarget
         data: 00
@@ -1373,7 +1418,7 @@ MonoBehaviour:
         data: 00
       - type: 3
         name: target
-        data: 0e000000
+        data: 0d000000
       - type: 3
         name: val
         data: 0a000000
@@ -1398,19 +1443,80 @@ MonoBehaviour:
       - type: 3
         name: val
         data: 08000000
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 4
+        name: valueType
+        data: 01000000
       - type: 9
-        name: label
-        data: 656e6761676564
+        name: attribName
+        data: 4865616c7468
+      - type: 4
+        name: identType
+        data: 01000000
+      - type: 3
+        name: target
+        data: 0f000000
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 8
+        name: value
+        data: 00000000
+      - type: 10
+        name: value
+        data: ffffffff
+      - type: 9
+        name: method
+        data: 53657456616c756543757272656e74
+      - type: 3
+        name: target
+        data: 15000000
       - type: 3
         name: val
-        data: ffffffff
+        data: 0e000000
+      - type: 4
+        name: valueType
+        data: 00000000
+      - type: 9
+        name: attribName
+        data: 4865616c7468
+      - type: 4
+        name: identType
+        data: 01000000
+      - type: 3
+        name: target
+        data: 12000000
+      - type: 5
+        name: cacheTarget
+        data: 00
+      - type: 8
+        name: value
+        data: 00000000
       - type: 10
         name: value
         data: ffffffff
+      - type: 9
+        name: method
+        data: 53657456616c75654d6178
+      - type: 3
+        name: target
+        data: 14000000
+      - type: 3
+        name: val
+        data: 11000000
       - type: 10
         name: value
-        data: ffffffff
-      gameObjects: []
+        data: 00000000
+      - type: 10
+        name: value
+        data: 00000000
+      gameObjects:
+      - {fileID: 0}
       unityObjects: []
       arrayData: []
       arrayDataNfo: []
@@ -1426,8 +1532,8 @@ MonoBehaviour:
           PublicKeyToken=null
         idx: 0
         size: 2
-      eventActive: 0101
-      blockActive: 010101010101010101010101010101
+      eventActive: 010101
+      blockActive: 01010101010101010101010101010101010101010101
   vars: []
   uniqueIdOnObject: -1
   NeedObjectActive: 0
@@ -1443,7 +1549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id:
-    savedIdent: efdec78c01514f2da0600475f5427be6
+    savedIdent: 88f74cb174b44eff9530fe400df96b06
   objectStartsActive: 1
   persistBloxLocalVars: 1
   persistPosition: 1

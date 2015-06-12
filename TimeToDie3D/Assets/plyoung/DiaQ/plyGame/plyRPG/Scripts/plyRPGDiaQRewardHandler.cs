@@ -10,7 +10,7 @@ using plyCommon;
 using plyGame;
 
 namespace DiaQ
-{				 
+{
 	public class plyRPGDiaQRewardHandler : MonoBehaviour, plyDataProviderInterface
 	{
 

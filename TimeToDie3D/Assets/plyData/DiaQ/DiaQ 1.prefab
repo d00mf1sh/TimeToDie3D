@@ -1,0 +1,547 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400004}
+  - 114: {fileID: 11410110}
+  m_Layer: 0
+  m_Name: DiaQ 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1383959672, guid: cf68dba5bac504248a9b51bd50391fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graphs:
+  - id:
+      savedIdent: ecb5b4ebcc5d47d0a8aa6ab1d165b1b0
+    name: Sample Graph
+    customIdent: 
+    comment: 
+    metaData: []
+    data:
+      objTypes:
+      - plyCommon.plyNode_Start
+      - DiaQ.DiaQNode_Dlg
+      - DiaQ.DiaQNode_Dlg
+      - DiaQ.DiaQNode_Dlg
+      - DiaQ.DiaQNode_Dlg
+      - DiaQ.DiaQNode_QStatus
+      - DiaQ.DiaQNode_QAccept
+      - plyCommon.plyNode_Msg
+      objDataIdx: 0000000007000000110000001b000000250000002f000000370000003f000000
+      objDataCnt: 070000000a0000000a0000000a0000000a00000008000000080000000b000000
+      objData:
+      - type: 2
+        name: outLinkIds
+        data: 00000000
+      - type: 7
+        name: id
+        data: 01000000
+      - type: 9
+        name: customIdent
+        data: 
+      - type: 9
+        name: comment
+        data: 
+      - type: 4
+        name: showComment
+        data: 01
+      - type: 2
+        name: metaData
+        data: 01000000
+      - type: 16
+        name: __rect
+        data: 0000e0410000a8420000484200002442
+      - type: 9
+        name: dialogueText
+        data: 57656c636f6d6520746f2074686520446961512073616d706c652e0a4920686176652061207461736b20666f7220796f752e
+      - type: 7
+        name: linkedQuestId
+        data: 02000000
+      - type: 2
+        name: responses
+        data: 02000000
+      - type: 2
+        name: outLinkIds
+        data: 03000000
+      - type: 7
+        name: id
+        data: 0d000000
+      - type: 9
+        name: customIdent
+        data: 
+      - type: 9
+        name: comment
+        data: 
+      - type: 4
+        name: showComment
+        data: 01
+      - type: 2
+        name: metaData
+        data: 04000000
+      - type: 16
+        name: __rect
+        data: 000097430080a443000048430000bc42
+      - type: 9
+        name: dialogueText
+        data: 596f752068617665206e6f742079657420636f6d706c6574656420796f7572207461736b2e
+      - type: 7
+        name: linkedQuestId
+        data: ffffffff
+      - type: 2
+        name: responses
+        data: 05000000
+      - type: 2
+        name: outLinkIds
+        data: 06000000
+      - type: 7
+        name: id
+        data: 10000000
+      - type: 9
+        name: customIdent
+        data: 
+      - type: 9
+        name: comment
+        data: 
+      - type: 4
+        name: showComment
+        data: 01
+      - type: 2
+        name: metaData
+        data: 07000000
+      - type: 16
+        name: __rect
+        data: 0000964300006a430000484300009c42
+      - type: 9
+        name: dialogueText
+        data: 476f6f6420746f2073656520796f7520616761696e2e20492068617665206e6f206d6f7265207461736b7320666f7220796f752e
+      - type: 7
+        name: linkedQuestId
+        data: ffffffff
+      - type: 2
+        name: responses
+        data: 08000000
+      - type: 2
+        name: outLinkIds
+        data: 09000000
+      - type: 7
+        name: id
+        data: 11000000
+      - type: 9
+        name: customIdent
+        data: 
+      - type: 9
+        name: comment
+        data: 
+      - type: 4
+        name: showComment
+        data: 01
+      - type: 2
+        name: metaData
+        data: 0a000000
+      - type: 16
+        name: __rect
+        data: 0000964300005c420000484300009c42
+      - type: 9
+        name: dialogueText
+        data: 57656c6c20646f6e652c20686572652061726520796f757220726577617264732e
+      - type: 7
+        name: linkedQuestId
+        data: ffffffff
+      - type: 2
+        name: responses
+        data: 0b000000
+      - type: 2
+        name: outLinkIds
+        data: 0c000000
+      - type: 7
+        name: id
+        data: 12000000
+      - type: 9
+        name: customIdent
+        data: 
+      - type: 9
+        name: comment
+        data: 
+      - type: 4
+        name: showComment
+        data: 01
+      - type: 2
+        name: metaData
+        data: 0d000000
+      - type: 16
+        name: __rect
+        data: 00009643000012430000484300009c42
+      - type: 7
+        name: questId
+        data: 02000000
+      - type: 2
+        name: outLinkIds
+        data: 0e000000
+      - type: 7
+        name: id
+        data: 14000000
+      - type: 9
+        name: customIdent
+        data: 
+      - type: 9
+        name: comment
+        data: 
+      - type: 4
+        name: showComment
+        data: 01
+      - type: 2
+        name: metaData
+        data: 0f000000
+      - type: 16
+        name: __rect
+        data: 0000e04200000243000002430000e242
+      - type: 7
+        name: questId
+        data: 02000000
+      - type: 2
+        name: outLinkIds
+        data: 10000000
+      - type: 7
+        name: id
+        data: 15000000
+      - type: 9
+        name: customIdent
+        data: 
+      - type: 9
+        name: comment
+        data: 
+      - type: 4
+        name: showComment
+        data: 01
+      - type: 2
+        name: metaData
+        data: 11000000
+      - type: 16
+        name: __rect
+        data: 004010440000a3430000024300005842
+      - type: 3
+        name: targetObjType
+        data: 00000000
+      - type: 9
+        name: targetObjTypeData
+        data: 53616d706c65
+      - type: 9
+        name: methodName
+        data: 4769766552657761726473
+      - type: 1
+        name: val
+        data: 00000000
+      - type: 2
+        name: outLinkIds
+        data: 13000000
+      - type: 7
+        name: id
+        data: 19000000
+      - type: 9
+        name: customIdent
+        data: 
+      - type: 9
+        name: comment
+        data: 
+      - type: 4
+        name: showComment
+        data: 01
+      - type: 2
+        name: metaData
+        data: 14000000
+      - type: 16
+        name: __rect
+        data: 00000a44000023430080904300002442
+      gameObjects: []
+      unityObjects: []
+      arrayData:
+      - type: 7
+        name: 0
+        data: 14000000
+      - type: 9
+        name: 0
+        data: 49276c6c20646f206974
+      - type: 9
+        name: 1
+        data: 4e6f7420696e746572726573746564
+      - type: 7
+        name: 0
+        data: 15000000
+      - type: 7
+        name: 1
+        data: ffffffff
+      - type: 9
+        name: 0
+        data: 4265207269676874206261636b
+      - type: 7
+        name: 0
+        data: ffffffff
+      - type: 9
+        name: 0
+        data: 427965
+      - type: 7
+        name: 0
+        data: ffffffff
+      - type: 9
+        name: 0
+        data: 5468616e6b73
+      - type: 7
+        name: 0
+        data: 19000000
+      - type: 7
+        name: 0
+        data: 11000000
+      - type: 7
+        name: 1
+        data: 12000000
+      - type: 7
+        name: 2
+        data: 10000000
+      - type: 7
+        name: 3
+        data: 0d000000
+      - type: 7
+        name: 0
+        data: ffffffff
+      - type: 9
+        name: 0
+        data: 31
+      - type: 9
+        name: 1
+        data: 32
+      - type: 9
+        name: 2
+        data: 
+      - type: 9
+        name: 3
+        data: 
+      - type: 9
+        name: 4
+        data: 53616d706c65205175657374
+      - type: 9
+        name: 5
+        data: 32
+      - type: 7
+        name: 0
+        data: ffffffff
+      arrayDataNfo:
+      - idx: 0
+        size: 1
+      - idx: 1
+        size: 0
+      - idx: 1
+        size: 2
+      - idx: 3
+        size: 2
+      - idx: 5
+        size: 0
+      - idx: 5
+        size: 1
+      - idx: 6
+        size: 1
+      - idx: 7
+        size: 0
+      - idx: 7
+        size: 1
+      - idx: 8
+        size: 1
+      - idx: 9
+        size: 0
+      - idx: 9
+        size: 1
+      - idx: 10
+        size: 1
+      - idx: 11
+        size: 0
+      - idx: 11
+        size: 4
+      - idx: 15
+        size: 0
+      - idx: 15
+        size: 1
+      - idx: 16
+        size: 0
+      - idx: 16
+        size: 6
+      - idx: 22
+        size: 1
+      - idx: 23
+        size: 0
+      customData:
+      - type: 9
+        name: dataProviderName
+        data: 44696151
+      - type: 3
+        name: targetObjType
+        data: 00000000
+      - type: 9
+        name: targetObjTypeData
+        data: 44696151
+      - type: 9
+        name: componentName
+        data: 44696151456e67696e65
+      - type: 2
+        name: nfo
+        data: 12000000
+      customDataNfo:
+      - typeName: plyCommon.plyDataObject, plyCommon, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        idx: 0
+        size: 5
+    __view_offset: {x: 23, y: 13}
+  metaData:
+  - dataType: 3
+    name: var1
+    boolValue: 0
+    intValue: 0
+    floatValue: 0
+    stringValue: a string value
+    rectValue:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    colorValue: {r: 0, g: 0, b: 0, a: 0}
+    vect2Value: {x: 0, y: 0}
+    vect3Value: {x: 0, y: 0, z: 0}
+    goValue: {fileID: 0}
+    uObjValue: {fileID: 0}
+  __last_node_id: 29
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 256426112, guid: ea7d1836f1e89914ba6ab9fdafc6fe87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inlineValues: []
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1940036827, guid: ea7d1836f1e89914ba6ab9fdafc6fe87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests:
+  - id: 2
+    name: Sample Quest
+    name_StringId: 0
+    customIdent: 
+    text: Click on the A button twice and the B button once.
+    text_StringId: 0
+    conditions:
+    - key: A
+      targetValue: 2
+      text: 
+      text_StringId: 0
+      metaData:
+      - dataType: 1
+        name: testVar
+        boolValue: 0
+        intValue: 5
+        floatValue: 0
+        stringValue: 
+        rectValue:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        colorValue: {r: 0, g: 0, b: 0, a: 0}
+        vect2Value: {x: 0, y: 0}
+        vect3Value: {x: 0, y: 0, z: 0}
+        goValue: {fileID: 0}
+        uObjValue: {fileID: 0}
+    - key: B
+      targetValue: 1
+      text: 
+      text_StringId: 0
+      metaData: []
+    rewards:
+    - keyObject:
+        dataProviderName: 
+        targetObjType: 0
+        targetObjTypeData: 
+        componentName: 
+        nfo: []
+      keyString: Gold
+      value: 200
+      metaData: []
+    - keyObject:
+        dataProviderName: DiaQ Sample Reward Giver
+        targetObjType: 0
+        targetObjTypeData: DiaQSampleRewardGiver
+        componentName: DiaQSampleRewardGiver
+        nfo:
+        - 1
+        - Scrap Metal
+      keyString: 
+      value: 3
+      metaData: []
+    metaData: []
+    _completed: 0
+    _rewarded: 0
+  __next_quest_id: 3
+--- !u!114 &11410110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 081f6d53188fdbb4186d58ba6fb8c4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

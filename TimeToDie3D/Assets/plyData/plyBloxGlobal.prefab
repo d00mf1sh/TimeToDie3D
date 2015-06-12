@@ -44,7 +44,7 @@ MonoBehaviour:
     type: 2
     boolValue: 0
     intValue: 0
-    floatValue: 10
+    floatValue: 20
     stringValue: 
     rectValue:
       serializedVersion: 2
@@ -80,7 +80,7 @@ MonoBehaviour:
     type: 2
     boolValue: 0
     intValue: 0
-    floatValue: -20
+    floatValue: -10
     stringValue: 
     rectValue:
       serializedVersion: 2
